@@ -93,16 +93,16 @@
     "website": "https://www.vinasantacruz.cl",
     "hasRestaurant": true,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 2,
+      "scenery": 5,
+      "facilities": 5,
       "dining": null
     },
     "amenities": [],
     "favoriteWines": [],
-    "notes": "",
+    "notes": "Car museum and a gondola up the hill.",
     "photos": []
   },
   {
