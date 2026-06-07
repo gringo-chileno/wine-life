@@ -326,8 +326,9 @@
       var pins = list.filter(hasCoords);
       if (!map) {
         map = L.map(els.map, { scrollWheelZoom: false });
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          attribution: "© OpenStreetMap", maxZoom: 18
+        // Dark basemap (CARTO) so the map fits the black theme.
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+          attribution: "© OpenStreetMap, © CARTO", subdomains: "abcd", maxZoom: 19
         }).addTo(map);
         markerLayer = L.layerGroup().addTo(map);
       }
