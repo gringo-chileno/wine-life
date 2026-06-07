@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "vina-montes",
+    "name": "Viña Montes",
+    "region": "Colchagua",
+    "country": "Chile",
+    "town": "Apalta",
+    "location": { "lat": null, "lng": null },
+    "visited": "2025-11-15",
+    "website": "https://www.monteswines.com",
+    "hasRestaurant": true,
+    "ratings": { "wine": 5, "scenery": 5, "facilities": 4, "kidFriendly": 3, "dining": 4 },
+    "amenities": ["tasting room", "shop", "guided tour", "restaurant"],
+    "favoriteWines": ["Montes Alpha M 2019", "Purple Angel"],
+    "notes": "(Sample entry — edit or delete me.) Hillside winery in Apalta with feng-shui cellar and big views over the Colchagua valley.",
+    "photos": []
+  },
+  {
+    "slug": "vina-casa-silva",
+    "name": "Viña Casa Silva",
+    "region": "Colchagua",
+    "country": "Chile",
+    "town": "San Fernando",
+    "location": { "lat": null, "lng": null },
+    "visited": "2025-11-16",
+    "website": "https://www.casasilva.cl",
+    "hasRestaurant": true,
+    "ratings": { "wine": 4, "scenery": 4, "facilities": 5, "kidFriendly": 4, "dining": 5 },
+    "amenities": ["tasting room", "shop", "restaurant", "polo field", "hotel"],
+    "favoriteWines": ["Microterroir Carmenère", "Quinta Generación"],
+    "notes": "(Sample entry — edit or delete me.) Historic estate, excellent restaurant on site, kid-friendly grounds.",
+    "photos": []
+  },
+  {
+    "slug": "vina-matetic",
+    "name": "Viña Matetic",
+    "region": "San Antonio / Leyda",
+    "country": "Chile",
+    "town": "Rosario Valley",
+    "location": { "lat": null, "lng": null },
+    "visited": "2025-10-04",
+    "website": "https://www.matetic.com",
+    "hasRestaurant": false,
+    "ratings": { "wine": 5, "scenery": 5, "facilities": 4, "kidFriendly": 2, "dining": null },
+    "amenities": ["tasting room", "organic", "guided tour"],
+    "favoriteWines": ["EQ Syrah", "Corralillo Sauvignon Blanc"],
+    "notes": "(Sample entry — edit or delete me.) Cool-climate organic estate. No restaurant at time of visit, so dining shows a dash.",
+    "photos": []
+  }
+]

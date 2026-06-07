@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Add / Edit — Wine Life</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">🍷</span>
+        <span class="brand-text">Wine Life</span>
+      </a>
+      <a class="btn btn-ghost" href="index.html">View journal</a>
+    </div>
+  </header>
+
+  <main class="wrap editor-main">
+    <h1>Add or edit a winery</h1>
+    <p class="editor-intro">
+      This form edits a working copy saved in your browser. When you're done, use
+      <strong>Export wineries.json</strong> and drop the file into the repo's
+      <code>data/</code> folder (or ask Claude to do it), then commit. Nothing is sent anywhere.
+    </p>
+
+    <div class="editor-actions" style="margin-top:0;border-top:none;padding-top:0;">
+      <button id="new-btn" class="btn btn-secondary" type="button">+ New entry</button>
+      <button id="reload-btn" class="btn btn-secondary" type="button">Reload from data file</button>
+      <label class="btn btn-secondary" style="cursor:pointer;">
+        Import a wineries.json
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+      </label>
+    </div>
+
+    <form id="form" autocomplete="off">
+      <input type="hidden" id="editing-slug" />
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-name">Winery name</label>
+          <input id="f-name" type="text" required placeholder="Viña …" />
+        </div>
+        <div class="field">
+          <label for="f-region">Region <span class="hint">(pick or type your own)</span></label>
+          <input id="f-region" type="text" list="region-list" placeholder="Colchagua" />
+          <datalist id="region-list"></datalist>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-town">Town / area</label>
+          <input id="f-town" type="text" placeholder="Apalta" />
+        </div>
+        <div class="field">
+          <label for="f-country">Country</label>
+          <select id="f-country">
+            <option value="Chile">Chile</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-visited">Date visited</label>
+          <input id="f-visited" type="date" />
+        </div>
+        <div class="field">
+          <label for="f-website">Website</label>
+          <input id="f-website" type="url" placeholder="https://…" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="toggle"><input id="f-has-restaurant" type="checkbox" /> Has a restaurant</label>
+      </div>
+
+      <div class="field">
+        <label>Ratings <span class="hint">(0–5; leave a category alone to skip it — shows a dash)</span></label>
+        <div id="ratings"></div>
+      </div>
+
+      <div class="field">
+        <label for="f-amenities-input">What else they have <span class="hint">(type and press Enter)</span></label>
+        <div class="chip-input" id="amenities-chips">
+          <input id="f-amenities-input" type="text" placeholder="tasting room, shop, picnic area…" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-favs-input">Favorite wines <span class="hint">(type and press Enter)</span></label>
+        <div class="chip-input" id="favs-chips">
+          <input id="f-favs-input" type="text" placeholder="Montes Alpha M 2019…" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-notes">Notes</label>
+        <textarea id="f-notes" placeholder="Anything you want to remember…"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="f-photos">Photo filenames <span class="hint">(one per line)</span></label>
+        <textarea id="f-photos" placeholder="apalta-hill.jpg&#10;cellar.jpg"></textarea>
+        <div class="note-box">
+          The site is static, so the browser can't copy image files into the repo.
+          Put your optimized photos in <code>images/&lt;slug&gt;/</code> and list just the
+          filenames here. The slug is auto-made from the name (shown on save).
+          Tip: run <code>scripts/optimize_photos.py</code> first to resize and strip GPS data.
+        </div>
+      </div>
+
+      <div class="editor-actions">
+        <button id="save-btn" class="btn btn-primary" type="submit">Save entry</button>
+        <button id="copy-entry-btn" class="btn btn-secondary" type="button">Copy this entry's JSON</button>
+        <button id="export-btn" class="btn btn-secondary" type="button">⬇ Export wineries.json</button>
+        <button id="delete-btn" class="link-btn" type="button" hidden>Delete this entry</button>
+      </div>
+    </form>
+
+    <section class="list-panel">
+      <h3 class="panel-title">Entries in working copy (<span id="entry-count">0</span>)</h3>
+      <div id="entry-list"></div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>

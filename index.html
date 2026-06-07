@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Wine Life — Winery Journal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark">🍷</span>
+        <span class="brand-text">Wine Life</span>
+      </a>
+      <a class="btn btn-ghost" href="editor.html">+ Add winery</a>
+    </div>
+  </header>
+
+  <!-- GRID VIEW -->
+  <main id="grid-view" class="wrap">
+    <div class="controls">
+      <input
+        id="search"
+        class="search"
+        type="search"
+        placeholder="Search name, region, notes, wines…"
+        autocomplete="off"
+        aria-label="Search wineries"
+      />
+      <div class="control-row">
+        <label class="control">
+          <span>Region</span>
+          <select id="filter-region"><option value="">All</option></select>
+        </label>
+        <label class="control">
+          <span>Restaurant</span>
+          <select id="filter-restaurant">
+            <option value="">Any</option>
+            <option value="yes">Has one</option>
+            <option value="no">None</option>
+          </select>
+        </label>
+        <label class="control">
+          <span>Kid-friendly ≥</span>
+          <select id="filter-kid">
+            <option value="">Any</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <label class="control">
+          <span>Sort by</span>
+          <select id="sort">
+            <option value="overall">Overall score</option>
+            <option value="wine">Wine</option>
+            <option value="scenery">Scenery</option>
+            <option value="recent">Recently visited</option>
+            <option value="name">Name (A–Z)</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <section id="grid" class="grid" aria-label="Wineries"></section>
+    <p id="empty" class="empty" hidden>No wineries match. Try clearing filters or search.</p>
+  </main>
+
+  <!-- DETAIL VIEW -->
+  <main id="detail-view" class="wrap" hidden></main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" hidden aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" alt="" />
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Wine Life — a personal winery journal.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
