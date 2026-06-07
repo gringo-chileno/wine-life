@@ -56,6 +56,22 @@
     return value.toFixed(1);
   }
 
+  // The numeric rating for a category, or null when unrated.
+  function ratingNum(winery, key) {
+    var v = winery && winery.ratings ? winery.ratings[key] : null;
+    return typeof v === "number" && !isNaN(v) ? v : null;
+  }
+
+  // How a category shows on screen:
+  //   "no restaurant" dining -> dash (not applicable)
+  //   unrated / "don't remember" -> "?" (excluded from the overall score)
+  //   otherwise the number.
+  function ratingText(winery, key) {
+    if (key === "dining" && winery && !winery.hasRestaurant) return DASH;
+    var v = ratingNum(winery, key);
+    return v === null ? "?" : v.toFixed(0);
+  }
+
   // Slugify a winery name into a stable id / folder name.
   function slugify(name) {
     return String(name || "")
@@ -99,6 +115,8 @@
     computeOverall: computeOverall,
     fmt: fmt,
     fmtScore: fmtScore,
+    ratingNum: ratingNum,
+    ratingText: ratingText,
     slugify: slugify,
     matchesSearch: matchesSearch,
     loadWineries: loadWineries

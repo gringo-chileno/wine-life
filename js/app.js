@@ -15,6 +15,7 @@
     search: document.getElementById("search"),
     region: document.getElementById("filter-region"),
     restaurant: document.getElementById("filter-restaurant"),
+    hotel: document.getElementById("filter-hotel"),
     kid: document.getElementById("filter-kid"),
     sort: document.getElementById("sort"),
     lightbox: document.getElementById("lightbox"),
@@ -36,7 +37,7 @@
     return typeof v === "number" ? v : null;
   }
 
-  // A 0-5 bar. value null renders as a dash with an empty track.
+  // A 0-5 bar. An unrated category shows "?" with an empty track.
   function ratingBar(label, value) {
     var row = el("div", "rating-row");
     row.appendChild(el("span", "rating-label", label));
@@ -49,7 +50,7 @@
     }
     track.appendChild(fill);
     row.appendChild(track);
-    row.appendChild(el("span", "rating-num", typeof value === "number" ? value.toFixed(0) : WL.DASH));
+    row.appendChild(el("span", "rating-num", typeof value === "number" ? value.toFixed(0) : "?"));
     return row;
   }
 
@@ -99,11 +100,11 @@
 
     var mini = el("div", "card-mini");
     WL.RATING_KEYS.forEach(function (r) {
-      var v = ratingValue(w, r.key);
+      var text = WL.ratingText(w, r.key);
       var chip = el("span", "mini-chip");
-      chip.title = r.label;
-      chip.appendChild(el("span", "mini-chip-label", r.label.charAt(0)));
-      chip.appendChild(el("span", "mini-chip-val", typeof v === "number" ? v.toFixed(0) : WL.DASH));
+      if (text === "?" || text === WL.DASH) chip.classList.add("mini-chip-muted");
+      chip.appendChild(el("span", "mini-chip-label", r.label));
+      chip.appendChild(el("span", "mini-chip-val", text));
       mini.appendChild(chip);
     });
     body.appendChild(mini);
@@ -117,6 +118,7 @@
       q: els.search.value,
       region: els.region.value,
       restaurant: els.restaurant.value,
+      hotel: els.hotel.value,
       kid: els.kid.value ? parseInt(els.kid.value, 10) : null,
       sort: els.sort.value
     };
@@ -129,6 +131,8 @@
       if (f.region && w.region !== f.region) return false;
       if (f.restaurant === "yes" && !w.hasRestaurant) return false;
       if (f.restaurant === "no" && w.hasRestaurant) return false;
+      if (f.hotel === "yes" && !w.hasHotel) return false;
+      if (f.hotel === "no" && w.hasHotel) return false;
       if (f.kid !== null) {
         var k = ratingValue(w, "kidFriendly");
         if (k === null || k < f.kid) return false;
@@ -196,6 +200,12 @@
       sub.appendChild(link);
     }
     headText.appendChild(sub);
+
+    var badges = el("div", "badges");
+    if (w.hasRestaurant) badges.appendChild(el("span", "badge", "🍽 Restaurant"));
+    if (w.hasHotel) badges.appendChild(el("span", "badge", "🏨 Hotel on site"));
+    if (badges.children.length) headText.appendChild(badges);
+
     head.appendChild(headText);
 
     var overall = WL.computeOverall(w);
@@ -309,7 +319,7 @@
     ["input", "change"].forEach(function (ev) {
       els.search.addEventListener(ev, applyFilters);
     });
-    [els.region, els.restaurant, els.kid, els.sort].forEach(function (s) {
+    [els.region, els.restaurant, els.hotel, els.kid, els.sort].forEach(function (s) {
       s.addEventListener("change", applyFilters);
     });
     els.lightboxClose.addEventListener("click", closeLightbox);

@@ -102,10 +102,14 @@ a { color: var(--wine); }
 .card-score-max { font-size: .85rem; color: var(--muted); font-weight: 600; }
 .card-meta { margin: 0; color: var(--muted); font-size: .9rem; }
 
-.card-mini { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
-.mini-chip { display: inline-flex; align-items: center; gap: 4px; background: #f4ece8; border-radius: 8px; padding: 3px 7px; font-size: .8rem; }
-.mini-chip-label { color: var(--muted); font-weight: 700; }
-.mini-chip-val { font-weight: 700; color: var(--ink); }
+.card-mini { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.mini-chip { display: inline-flex; align-items: center; gap: 5px; background: #f4ece8; border-radius: 8px; padding: 3px 9px; font-size: .82rem; }
+.mini-chip-label { color: var(--muted); font-weight: 600; }
+.mini-chip-val { font-weight: 800; color: var(--wine); }
+.mini-chip-muted .mini-chip-val { color: var(--muted); }
+
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.badge { background: #f4ece8; border-radius: 999px; padding: 5px 13px; font-size: .9rem; font-weight: 600; }
 
 /* Detail ------------------------------------------------------------------- */
 

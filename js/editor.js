@@ -20,6 +20,7 @@
     visited: document.getElementById("f-visited"),
     website: document.getElementById("f-website"),
     hasRestaurant: document.getElementById("f-has-restaurant"),
+    hasHotel: document.getElementById("f-has-hotel"),
     ratingsBox: document.getElementById("ratings"),
     amenInput: document.getElementById("f-amenities-input"),
     amenChips: document.getElementById("amenities-chips"),
@@ -68,13 +69,14 @@
       row.appendChild(el("span", null, r.label));
       var seg = el("div", "seg");
       seg.dataset.key = r.key;
-      // a "-" button to clear, then 0..5
-      ["–", 0, 1, 2, 3, 4, 5].forEach(function (val) {
+      // a "?" button for "don't remember" (excluded from the score), then 0..5
+      ["?", 0, 1, 2, 3, 4, 5].forEach(function (val) {
         var b = el("button", null, String(val));
         b.type = "button";
-        b.dataset.val = (val === "–") ? "" : String(val);
+        b.dataset.val = (val === "?") ? "" : String(val);
+        if (val === "?") b.title = "Don't remember (left out of the overall score)";
         b.addEventListener("click", function () {
-          ratings[r.key] = (val === "–") ? null : val;
+          ratings[r.key] = (val === "?") ? null : val;
           paintSeg(seg, ratings[r.key]);
         });
         seg.appendChild(b);
@@ -130,6 +132,7 @@
     f.visited.value = "";
     f.website.value = "";
     f.hasRestaurant.checked = false;
+    f.hasHotel.checked = false;
     f.notes.value = "";
     f.photos.value = "";
     amenities = [];
@@ -151,6 +154,7 @@
     f.visited.value = w.visited || "";
     f.website.value = w.website || "";
     f.hasRestaurant.checked = !!w.hasRestaurant;
+    f.hasHotel.checked = !!w.hasHotel;
     f.notes.value = w.notes || "";
     f.photos.value = (w.photos || []).map(stripImgPrefix).join("\n");
     amenities = (w.amenities || []).slice();
@@ -191,6 +195,7 @@
       visited: f.visited.value || null,
       website: f.website.value.trim(),
       hasRestaurant: hasRestaurant,
+      hasHotel: f.hasHotel.checked,
       ratings: {
         wine: ratings.wine,
         scenery: ratings.scenery,
