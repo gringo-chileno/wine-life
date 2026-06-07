@@ -338,5 +338,187 @@
     "favoriteWines": [],
     "notes": "",
     "photos": []
+  },
+  {
+    "slug": "pulenta-estate",
+    "name": "Pulenta Estate",
+    "region": "Mendoza / Luján de Cuyo",
+    "country": "Argentina",
+    "town": "Agrelo",
+    "location": {
+      "lat": -33.1964305,
+      "lng": -68.9558349
+    },
+    "visited": "2026-01-17",
+    "website": "https://www.pulentaestate.com",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "bodega-benegas",
+    "name": "Bodega Benegas",
+    "region": "Mendoza / Luján de Cuyo",
+    "country": "Argentina",
+    "town": "Mayor Drummond",
+    "location": {
+      "lat": -33.0043852,
+      "lng": -68.8504166
+    },
+    "visited": "2026-01-17",
+    "website": "",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "casarena",
+    "name": "Casarena Bodega",
+    "region": "Mendoza / Luján de Cuyo",
+    "country": "Argentina",
+    "town": "Perdriel",
+    "location": {
+      "lat": -33.0679148,
+      "lng": -68.8929328
+    },
+    "visited": "2026-01-17",
+    "website": "https://www.casarena.com",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "odfjell-vineyards",
+    "name": "Odfjell Vineyards",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Padre Hurtado",
+    "location": {
+      "lat": -33.5399108,
+      "lng": -70.8775191
+    },
+    "visited": null,
+    "website": "https://www.odfjellvineyards.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": true,
+    "ratings": {
+      "wine": 3,
+      "scenery": 4,
+      "facilities": 4,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "Farm animals on the grounds.",
+    "photos": []
+  },
+  {
+    "slug": "vina-tarapaca",
+    "name": "Viña Tarapacá",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Isla de Maipo",
+    "location": {
+      "lat": -33.7689096,
+      "lng": -70.9271029
+    },
+    "visited": null,
+    "website": "https://www.tarapaca.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "villard-fine-wines",
+    "name": "Villard Fine Wines",
+    "region": "Casablanca",
+    "country": "Chile",
+    "town": "Casablanca",
+    "location": {
+      "lat": null,
+      "lng": null
+    },
+    "visited": null,
+    "website": "https://www.villard.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "casas-del-bosque",
+    "name": "Casas del Bosque",
+    "region": "Casablanca",
+    "country": "Chile",
+    "town": "Casablanca",
+    "location": {
+      "lat": -33.318148,
+      "lng": -71.4322508
+    },
+    "visited": null,
+    "website": "https://www.casasdelbosque.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
   }
 ]
