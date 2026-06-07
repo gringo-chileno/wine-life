@@ -1,2 +1,6 @@
 scripts/_staging/
+scripts/__pycache__/
+__pycache__/
+*.pyc
+_*.html
 .DS_Store
