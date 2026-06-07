@@ -737,7 +737,7 @@
       "lat": -33.6469615,
       "lng": -70.886804
     },
-    "visited": null,
+    "visited": "2025-06-22",
     "website": "https://www.undurraga.cl",
     "hasRestaurant": true,
     "hasHotel": false,
@@ -751,7 +751,9 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vina-undurraga/IMG_0563.jpg"
+    ]
   },
   {
     "slug": "vina-emiliana",
@@ -763,21 +765,23 @@
       "lat": -33.3662785,
       "lng": -71.298127
     },
-    "visited": null,
+    "visited": "2025-10-03",
     "website": "https://www.emiliana.cl",
     "hasRestaurant": false,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
       "wine": 2,
-      "scenery": 3,
+      "scenery": 4,
       "facilities": 3,
       "dining": null
     },
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vina-emiliana/IMG_2794.jpg"
+    ]
   },
   {
     "slug": "cavas-del-valle",
