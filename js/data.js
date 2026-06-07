@@ -2,12 +2,12 @@
 (function () {
   "use strict";
 
-  // The five rating categories, 0-5. `dining` is null when there's no restaurant.
+  // The four rating categories, 0-5. `dining` is null when there's no restaurant.
+  // Kid-friendly is a yes/no attribute (like restaurant/hotel), not a rated axis.
   var RATING_KEYS = [
     { key: "wine", label: "Wine" },
     { key: "scenery", label: "Scenery" },
     { key: "facilities", label: "Facilities" },
-    { key: "kidFriendly", label: "Kid-friendly" },
     { key: "dining", label: "Dining" }
   ];
 

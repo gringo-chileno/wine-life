@@ -25,6 +25,7 @@
     geoStatus: document.getElementById("geo-status"),
     hasRestaurant: document.getElementById("f-has-restaurant"),
     hasHotel: document.getElementById("f-has-hotel"),
+    kidFriendly: document.getElementById("f-kid-friendly"),
     ratingsBox: document.getElementById("ratings"),
     amenInput: document.getElementById("f-amenities-input"),
     amenChips: document.getElementById("amenities-chips"),
@@ -141,11 +142,12 @@
     f.geoStatus.className = "geo-status";
     f.hasRestaurant.checked = false;
     f.hasHotel.checked = false;
+    f.kidFriendly.checked = false;
     f.notes.value = "";
     f.photos.value = "";
     amenities = [];
     favs = [];
-    ratings = { wine: null, scenery: null, facilities: null, kidFriendly: null, dining: null };
+    ratings = { wine: null, scenery: null, facilities: null, dining: null };
     renderChips(f.amenChips, f.amenInput, amenities);
     renderChips(f.favsChips, f.favsInput, favs);
     buildRatingControls();
@@ -167,6 +169,7 @@
     f.geoStatus.className = "geo-status";
     f.hasRestaurant.checked = !!w.hasRestaurant;
     f.hasHotel.checked = !!w.hasHotel;
+    f.kidFriendly.checked = !!w.kidFriendly;
     f.notes.value = w.notes || "";
     f.photos.value = (w.photos || []).map(stripImgPrefix).join("\n");
     amenities = (w.amenities || []).slice();
@@ -175,7 +178,6 @@
       wine: numOrNull(w.ratings && w.ratings.wine),
       scenery: numOrNull(w.ratings && w.ratings.scenery),
       facilities: numOrNull(w.ratings && w.ratings.facilities),
-      kidFriendly: numOrNull(w.ratings && w.ratings.kidFriendly),
       dining: numOrNull(w.ratings && w.ratings.dining)
     };
     renderChips(f.amenChips, f.amenInput, amenities);
@@ -212,11 +214,11 @@
       website: f.website.value.trim(),
       hasRestaurant: hasRestaurant,
       hasHotel: f.hasHotel.checked,
+      kidFriendly: f.kidFriendly.checked,
       ratings: {
         wine: ratings.wine,
         scenery: ratings.scenery,
         facilities: ratings.facilities,
-        kidFriendly: ratings.kidFriendly,
         dining: hasRestaurant ? ratings.dining : null
       },
       amenities: amenities.slice(),

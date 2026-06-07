@@ -227,7 +227,7 @@
       region: els.region.value,
       restaurant: els.restaurant.value,
       hotel: els.hotel.value,
-      kid: els.kid.value ? parseInt(els.kid.value, 10) : null,
+      kid: els.kid.value,
       sort: els.sort.value
     };
   }
@@ -241,10 +241,8 @@
       if (f.restaurant === "no" && w.hasRestaurant) return false;
       if (f.hotel === "yes" && !w.hasHotel) return false;
       if (f.hotel === "no" && w.hasHotel) return false;
-      if (f.kid !== null) {
-        var k = ratingValue(w, "kidFriendly");
-        if (k === null || k < f.kid) return false;
-      }
+      if (f.kid === "yes" && !w.kidFriendly) return false;
+      if (f.kid === "no" && w.kidFriendly) return false;
       return true;
     });
 
@@ -415,6 +413,7 @@
     var badges = el("div", "badges");
     if (w.hasRestaurant) badges.appendChild(el("span", "badge", "🍽 Restaurant"));
     if (w.hasHotel) badges.appendChild(el("span", "badge", "🏨 Hotel on site"));
+    if (w.kidFriendly) badges.appendChild(el("span", "badge", "👶 Kid-friendly"));
     if (badges.children.length) headText.appendChild(badges);
 
     head.appendChild(headText);

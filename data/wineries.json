@@ -13,11 +13,11 @@
     "website": "https://www.monteswines.com",
     "hasRestaurant": true,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": 5,
       "scenery": 5,
       "facilities": 5,
-      "kidFriendly": 3,
       "dining": 5
     },
     "amenities": [],
@@ -41,11 +41,11 @@
     "website": "https://www.viumanent.cl",
     "hasRestaurant": true,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -67,11 +67,11 @@
     "website": "https://www.montgras.cl",
     "hasRestaurant": false,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -93,11 +93,11 @@
     "website": "https://www.vinasantacruz.cl",
     "hasRestaurant": true,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -119,12 +119,12 @@
     "website": "https://vik.cl",
     "hasRestaurant": true,
     "hasHotel": true,
+    "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "kidFriendly": null,
-      "dining": null
+      "wine": 5,
+      "scenery": 5,
+      "facilities": 5,
+      "dining": 3
     },
     "amenities": [],
     "favoriteWines": [],
@@ -145,11 +145,11 @@
     "website": "https://www.bodegasre.cl",
     "hasRestaurant": false,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -171,11 +171,11 @@
     "website": "https://www.santarita.com",
     "hasRestaurant": true,
     "hasHotel": true,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -197,12 +197,12 @@
     "website": "https://www.lapostolle.com",
     "hasRestaurant": true,
     "hasHotel": true,
+    "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "kidFriendly": null,
-      "dining": null
+      "wine": 5,
+      "scenery": 5,
+      "facilities": 5,
+      "dining": 5
     },
     "amenities": [],
     "favoriteWines": [],
@@ -223,11 +223,11 @@
     "website": "https://conchaytoro.com",
     "hasRestaurant": true,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -249,11 +249,11 @@
     "website": "https://www.flahertywines.com",
     "hasRestaurant": false,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -275,11 +275,11 @@
     "website": "https://www.bodegamonteviejo.com",
     "hasRestaurant": true,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -301,11 +301,11 @@
     "website": "https://zuccardiwines.com",
     "hasRestaurant": true,
     "hasHotel": false,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
@@ -327,11 +327,11 @@
     "website": "https://vinesofmendoza.com",
     "hasRestaurant": true,
     "hasHotel": true,
+    "kidFriendly": false,
     "ratings": {
       "wine": null,
       "scenery": null,
       "facilities": null,
-      "kidFriendly": null,
       "dining": null
     },
     "amenities": [],
