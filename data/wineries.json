@@ -147,7 +147,7 @@
       "wine": 5,
       "scenery": 5,
       "facilities": 5,
-      "dining": 3
+      "dining": 2
     },
     "amenities": [],
     "favoriteWines": [],
@@ -205,16 +205,16 @@
     "website": "https://www.santarita.com",
     "hasRestaurant": true,
     "hasHotel": true,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": 4,
-      "scenery": 4,
+      "wine": 2,
+      "scenery": 5,
       "facilities": 5,
-      "dining": 3
+      "dining": null
     },
     "amenities": [],
     "favoriteWines": [],
-    "notes": "",
+    "notes": "Museum on site.",
     "photos": [
       "images/vina-santa-rita/IMG_3935.jpg",
       "images/vina-santa-rita/IMG_3941.jpg",
@@ -350,8 +350,7 @@
       "images/monteviejo/IMG_4912.jpg",
       "images/monteviejo/IMG_4914.jpg",
       "images/monteviejo/IMG_8830.jpg",
-      "images/monteviejo/IMG_8831.jpg",
-      "images/monteviejo/IMG_8833.jpg"
+      "images/monteviejo/IMG_8831.jpg"
     ]
   },
   {
@@ -394,8 +393,8 @@
     "country": "Argentina",
     "town": "Tunuyán",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": -33.5898633,
+      "lng": -69.2207333
     },
     "visited": "2026-01-18",
     "website": "https://vinesofmendoza.com",
@@ -411,7 +410,9 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vines-of-mendoza/IMG_8833.jpg"
+    ]
   },
   {
     "slug": "pulenta-estate",
@@ -610,14 +611,14 @@
     },
     "visited": "2025-05-18",
     "website": "https://www.casasdelbosque.cl",
-    "hasRestaurant": false,
+    "hasRestaurant": true,
     "hasHotel": false,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 3,
+      "scenery": 4,
+      "facilities": 4,
+      "dining": 4
     },
     "amenities": [],
     "favoriteWines": [],
@@ -647,10 +648,10 @@
     "hasHotel": true,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 4,
+      "scenery": 3,
+      "facilities": 5,
+      "dining": 3
     },
     "amenities": [],
     "favoriteWines": [],
@@ -677,7 +678,7 @@
     "visited": "2026-03-18",
     "website": "https://www.vinoslof.com",
     "hasRestaurant": true,
-    "hasHotel": false,
+    "hasHotel": true,
     "kidFriendly": false,
     "ratings": {
       "wine": 3,
