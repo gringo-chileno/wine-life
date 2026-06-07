@@ -238,12 +238,12 @@
   {
     "slug": "flaherty-wines",
     "name": "Flaherty Wines",
-    "region": "Casablanca",
+    "region": "Aconcagua",
     "country": "Chile",
-    "town": "Casablanca",
+    "town": "San Felipe",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": -32.7624954,
+      "lng": -70.6807713
     },
     "visited": "2025-09-20",
     "website": "https://www.flahertywines.com",
@@ -277,10 +277,10 @@
     "hasHotel": false,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 3,
+      "scenery": 4,
+      "facilities": 5,
+      "dining": 3
     },
     "amenities": [],
     "favoriteWines": [],
