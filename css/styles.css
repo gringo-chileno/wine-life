@@ -16,6 +16,9 @@
 
 * { box-sizing: border-box; }
 
+/* The hidden attribute must always win over class display rules (e.g. .lightbox). */
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {
