@@ -5,49 +5,338 @@
     "region": "Colchagua",
     "country": "Chile",
     "town": "Apalta",
-    "location": { "lat": -34.6123524, "lng": -71.2736714 },
-    "visited": "2025-11-15",
+    "location": {
+      "lat": -34.6123524,
+      "lng": -71.2736714
+    },
+    "visited": "2025-02-08",
     "website": "https://www.monteswines.com",
     "hasRestaurant": true,
     "hasHotel": false,
-    "ratings": { "wine": 5, "scenery": 5, "facilities": 4, "kidFriendly": 3, "dining": 4 },
-    "amenities": ["tasting room", "shop", "guided tour", "restaurant"],
-    "favoriteWines": ["Montes Alpha M 2019", "Purple Angel"],
-    "notes": "(Sample entry — edit or delete me.) Hillside winery in Apalta with feng-shui cellar and big views over the Colchagua valley.",
+    "ratings": {
+      "wine": 5,
+      "scenery": 5,
+      "facilities": 5,
+      "kidFriendly": 3,
+      "dining": 5
+    },
+    "amenities": [],
+    "favoriteWines": [
+      "Montes Alpha Carmenère"
+    ],
+    "notes": "",
     "photos": []
   },
   {
-    "slug": "vina-casa-silva",
-    "name": "Viña Casa Silva",
+    "slug": "viu-manent",
+    "name": "Viu Manent",
     "region": "Colchagua",
     "country": "Chile",
-    "town": "San Fernando",
-    "location": { "lat": -34.5402051, "lng": -70.9666086 },
-    "visited": "2025-11-16",
-    "website": "https://www.casasilva.cl",
+    "town": "Cunaco",
+    "location": {
+      "lat": -34.6493227,
+      "lng": -71.3067672
+    },
+    "visited": "2025-02-09",
+    "website": "https://www.viumanent.cl",
     "hasRestaurant": true,
-    "hasHotel": true,
-    "ratings": { "wine": 4, "scenery": 4, "facilities": 5, "kidFriendly": 4, "dining": 5 },
-    "amenities": ["tasting room", "shop", "restaurant", "polo field", "hotel"],
-    "favoriteWines": ["Microterroir Carmenère", "Quinta Generación"],
-    "notes": "(Sample entry — edit or delete me.) Historic estate, excellent restaurant on site, kid-friendly grounds.",
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
     "photos": []
   },
   {
-    "slug": "vina-matetic",
-    "name": "Viña Matetic",
-    "region": "San Antonio / Leyda",
+    "slug": "vina-montgras",
+    "name": "Viña MontGras",
+    "region": "Colchagua",
     "country": "Chile",
-    "town": "Rosario Valley",
-    "location": { "lat": -33.4778256, "lng": -71.4749155 },
-    "visited": "2025-10-04",
-    "website": "https://www.matetic.com",
+    "town": "Palmilla",
+    "location": {
+      "lat": -34.5960542,
+      "lng": -71.3624782
+    },
+    "visited": "2025-05-24",
+    "website": "https://www.montgras.cl",
     "hasRestaurant": false,
     "hasHotel": false,
-    "ratings": { "wine": 5, "scenery": 5, "facilities": 4, "kidFriendly": 2, "dining": null },
-    "amenities": ["tasting room", "organic", "guided tour"],
-    "favoriteWines": ["EQ Syrah", "Corralillo Sauvignon Blanc"],
-    "notes": "(Sample entry — edit or delete me.) Cool-climate organic estate. No restaurant at time of visit, so dining shows a dash.",
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "vina-santa-cruz",
+    "name": "Viña Santa Cruz",
+    "region": "Colchagua",
+    "country": "Chile",
+    "town": "Lolol",
+    "location": {
+      "lat": -34.7072677,
+      "lng": -71.5621997
+    },
+    "visited": "2025-06-20",
+    "website": "https://www.vinasantacruz.cl",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "vik",
+    "name": "VIK",
+    "region": "Cachapoal",
+    "country": "Chile",
+    "town": "Millahue",
+    "location": {
+      "lat": -34.5350091,
+      "lng": -71.2398827
+    },
+    "visited": "2025-08-31",
+    "website": "https://vik.cl",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "bodegas-re",
+    "name": "Bodegas RE",
+    "region": "Casablanca",
+    "country": "Chile",
+    "town": "Casablanca",
+    "location": {
+      "lat": -33.304247,
+      "lng": -71.3976778
+    },
+    "visited": "2025-10-05",
+    "website": "https://www.bodegasre.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "vina-santa-rita",
+    "name": "Viña Santa Rita",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Alto Jahuel",
+    "location": {
+      "lat": -33.7294382,
+      "lng": -70.672469
+    },
+    "visited": "2025-12-14",
+    "website": "https://www.santarita.com",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "lapostolle-clos-apalta",
+    "name": "Lapostolle (Clos Apalta)",
+    "region": "Colchagua",
+    "country": "Chile",
+    "town": "Apalta",
+    "location": {
+      "lat": -34.5994086,
+      "lng": -71.2959149
+    },
+    "visited": "2026-02-07",
+    "website": "https://www.lapostolle.com",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "concha-y-toro",
+    "name": "Concha y Toro",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Pirque",
+    "location": {
+      "lat": -33.6144926,
+      "lng": -70.575145
+    },
+    "visited": "2026-04-11",
+    "website": "https://conchaytoro.com",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "flaherty-wines",
+    "name": "Flaherty Wines",
+    "region": "Casablanca",
+    "country": "Chile",
+    "town": "Casablanca",
+    "location": {
+      "lat": null,
+      "lng": null
+    },
+    "visited": "2025-09-20",
+    "website": "https://www.flahertywines.com",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "monteviejo",
+    "name": "Bodega Monteviejo",
+    "region": "Mendoza / Uco Valley",
+    "country": "Argentina",
+    "town": "Vista Flores",
+    "location": {
+      "lat": -33.5901,
+      "lng": -69.2193
+    },
+    "visited": "2026-01-18",
+    "website": "https://www.bodegamonteviejo.com",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "zuccardi-valle-de-uco",
+    "name": "Zuccardi Valle de Uco",
+    "region": "Mendoza / Uco Valley",
+    "country": "Argentina",
+    "town": "Paraje Altamira",
+    "location": {
+      "lat": -33.7721,
+      "lng": -69.156
+    },
+    "visited": "2026-01-18",
+    "website": "https://zuccardiwines.com",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "vines-of-mendoza",
+    "name": "The Vines of Mendoza",
+    "region": "Mendoza / Uco Valley",
+    "country": "Argentina",
+    "town": "Tunuyán",
+    "location": {
+      "lat": null,
+      "lng": null
+    },
+    "visited": "2026-01-18",
+    "website": "https://vinesofmendoza.com",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "kidFriendly": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
     "photos": []
   }
 ]
