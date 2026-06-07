@@ -271,11 +271,11 @@
     "website": "https://conchaytoro.com",
     "hasRestaurant": true,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 3,
+      "scenery": 5,
+      "facilities": 5,
       "dining": null
     },
     "amenities": [],
@@ -429,9 +429,9 @@
     "hasHotel": false,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 3,
+      "scenery": 4,
+      "facilities": 3,
       "dining": null
     },
     "amenities": [],
@@ -462,9 +462,9 @@
     "hasHotel": false,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 4,
+      "scenery": 2,
+      "facilities": 4,
       "dining": null
     },
     "amenities": [],
@@ -488,10 +488,10 @@
     "hasHotel": false,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 3,
+      "scenery": 3,
+      "facilities": 3,
+      "dining": 3
     },
     "amenities": [],
     "favoriteWines": [],
@@ -629,6 +629,101 @@
       "images/casas-del-bosque/IMG_0093.jpg",
       "images/casas-del-bosque/IMG_0097.jpg",
       "images/casas-del-bosque/IMG_2619.jpg"
+    ]
+  },
+  {
+    "slug": "casa-silva",
+    "name": "Viña Casa Silva",
+    "region": "Colchagua",
+    "country": "Chile",
+    "town": "Angostura",
+    "location": {
+      "lat": -34.5402051,
+      "lng": -70.9666086
+    },
+    "visited": "2026-02-06",
+    "website": "https://www.casasilva.cl",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": null,
+      "scenery": null,
+      "facilities": null,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/casa-silva/IMG_5402.jpg",
+      "images/casa-silva/IMG_5406.jpg",
+      "images/casa-silva/IMG_9424.jpg",
+      "images/casa-silva/IMG_5407.jpg",
+      "images/casa-silva/IMG_9425.jpg",
+      "images/casa-silva/IMG_5404.jpg"
+    ]
+  },
+  {
+    "slug": "vinos-lof",
+    "name": "Vinos LOF",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Paine",
+    "location": {
+      "lat": -33.7632,
+      "lng": -70.6539
+    },
+    "visited": "2026-03-18",
+    "website": "https://www.vinoslof.com",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 3,
+      "scenery": 4,
+      "facilities": 4,
+      "dining": 5
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "Asado.",
+    "photos": [
+      "images/vinos-lof/IMG_0062.jpg",
+      "images/vinos-lof/IMG_0063.jpg"
+    ]
+  },
+  {
+    "slug": "vina-los-3",
+    "name": "Viña Los 3",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Paine",
+    "location": {
+      "lat": -33.8567,
+      "lng": -70.6269
+    },
+    "visited": "2026-03-18",
+    "website": "",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 3,
+      "scenery": 5,
+      "facilities": 3,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/vina-los-3/IMG_0035.jpg",
+      "images/vina-los-3/IMG_0047.jpg",
+      "images/vina-los-3/IMG_0046.jpg",
+      "images/vina-los-3/IMG_0034.jpg",
+      "images/vina-los-3/IMG_0041.jpg",
+      "images/vina-los-3/IMG_0045.jpg"
     ]
   }
 ]
