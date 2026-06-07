@@ -41,16 +41,16 @@
     "website": "https://www.viumanent.cl",
     "hasRestaurant": true,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 3,
+      "scenery": 4,
+      "facilities": 4,
+      "dining": 4
     },
     "amenities": [],
     "favoriteWines": [],
-    "notes": "",
+    "notes": "Polo match on the grounds.",
     "photos": []
   },
   {
