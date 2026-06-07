@@ -132,6 +132,15 @@ a { color: var(--wine-accent); }
 .mini-chip-val { font-weight: 800; color: var(--wine-accent); }
 .mini-chip-muted .mini-chip-val { color: var(--muted); }
 
+.card-amen { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 9px; }
+.amen-chip { display: inline-flex; align-items: center; gap: 5px; font-size: .8rem; font-weight: 700; }
+.amen-chip .amen-mark { font-weight: 800; }
+.amen-on { color: var(--ink); }
+.amen-on .amen-mark { color: var(--good); }
+.amen-off { color: var(--muted); opacity: .7; }
+.amen-off .amen-ico { filter: grayscale(1); opacity: .55; }
+.amen-off .amen-mark { color: var(--muted); }
+
 .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .badge { background: var(--chip); border-radius: 999px; padding: 5px 13px; font-size: .9rem; font-weight: 600; }
 

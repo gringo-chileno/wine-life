@@ -219,8 +219,22 @@
       mini.appendChild(chip);
     });
     body.appendChild(mini);
+
+    var amen = el("div", "card-amen");
+    amen.appendChild(amenChip("👶", "Kid-friendly", w.kidFriendly));
+    amen.appendChild(amenChip("🏨", "Hotel", w.hasHotel));
+    body.appendChild(amen);
+
     a.appendChild(body);
     return a;
+  }
+
+  function amenChip(icon, label, on) {
+    var chip = el("span", "amen-chip" + (on ? " amen-on" : " amen-off"));
+    chip.appendChild(el("span", "amen-ico", icon));
+    chip.appendChild(el("span", "amen-lbl", label));
+    chip.appendChild(el("span", "amen-mark", on ? "✓" : "✕"));
+    return chip;
   }
 
   function currentFilters() {
