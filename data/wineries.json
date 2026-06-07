@@ -247,13 +247,13 @@
     },
     "visited": "2025-09-20",
     "website": "https://www.flahertywines.com",
-    "hasRestaurant": false,
+    "hasRestaurant": true,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 5,
+      "scenery": 2,
+      "facilities": 4,
       "dining": null
     },
     "amenities": [],
