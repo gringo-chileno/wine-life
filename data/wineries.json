@@ -549,14 +549,14 @@
     },
     "visited": "2026-03-26",
     "website": "https://www.tarapaca.cl",
-    "hasRestaurant": false,
+    "hasRestaurant": true,
     "hasHotel": false,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 2,
+      "scenery": 4,
+      "facilities": 3,
+      "dining": 3
     },
     "amenities": [],
     "favoriteWines": [],
@@ -582,18 +582,18 @@
     },
     "visited": "2026-04-05",
     "website": "https://www.villard.cl",
-    "hasRestaurant": false,
+    "hasRestaurant": true,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 4,
+      "scenery": 5,
+      "facilities": 4,
+      "dining": 4
     },
     "amenities": [],
     "favoriteWines": [],
-    "notes": "",
+    "notes": "Kid grape-juice pairing, and picking grapes in the vineyard.",
     "photos": [
       "images/villard-fine-wines/IMG_0478.jpg",
       "images/villard-fine-wines/IMG_5949.jpg"
