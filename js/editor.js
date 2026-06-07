@@ -19,6 +19,10 @@
     country: document.getElementById("f-country"),
     visited: document.getElementById("f-visited"),
     website: document.getElementById("f-website"),
+    lat: document.getElementById("f-lat"),
+    lng: document.getElementById("f-lng"),
+    geoBtn: document.getElementById("geo-btn"),
+    geoStatus: document.getElementById("geo-status"),
     hasRestaurant: document.getElementById("f-has-restaurant"),
     hasHotel: document.getElementById("f-has-hotel"),
     ratingsBox: document.getElementById("ratings"),
@@ -131,6 +135,10 @@
     f.country.value = "Chile";
     f.visited.value = "";
     f.website.value = "";
+    f.lat.value = "";
+    f.lng.value = "";
+    f.geoStatus.textContent = "";
+    f.geoStatus.className = "geo-status";
     f.hasRestaurant.checked = false;
     f.hasHotel.checked = false;
     f.notes.value = "";
@@ -153,6 +161,10 @@
     f.country.value = w.country || "Chile";
     f.visited.value = w.visited || "";
     f.website.value = w.website || "";
+    f.lat.value = w.location && typeof w.location.lat === "number" ? w.location.lat : "";
+    f.lng.value = w.location && typeof w.location.lng === "number" ? w.location.lng : "";
+    f.geoStatus.textContent = "";
+    f.geoStatus.className = "geo-status";
     f.hasRestaurant.checked = !!w.hasRestaurant;
     f.hasHotel.checked = !!w.hasHotel;
     f.notes.value = w.notes || "";
@@ -174,6 +186,10 @@
   }
 
   function numOrNull(v) { return typeof v === "number" && !isNaN(v) ? v : null; }
+  function numFromField(input) {
+    var v = parseFloat(String(input.value).trim());
+    return isNaN(v) ? null : v;
+  }
   function stripImgPrefix(p) { return String(p).replace(/^images\/[^/]+\//, ""); }
 
   // Build a winery object from the current form state.
@@ -191,7 +207,7 @@
       region: f.region.value.trim(),
       country: f.country.value,
       town: f.town.value.trim(),
-      location: { lat: null, lng: null },
+      location: { lat: numFromField(f.lat), lng: numFromField(f.lng) },
       visited: f.visited.value || null,
       website: f.website.value.trim(),
       hasRestaurant: hasRestaurant,
@@ -288,6 +304,30 @@
       flash("Saved “" + entry.name + "”. Export when you're ready to publish.");
     });
 
+    f.geoBtn.addEventListener("click", function () {
+      var name = f.name.value.trim();
+      if (!name && !f.town.value.trim() && !f.region.value.trim()) {
+        setGeoStatus("Add a name or town/region first, then look up.", "warn");
+        return;
+      }
+      var probe = {
+        name: name, town: f.town.value.trim(),
+        region: f.region.value.trim(), country: f.country.value
+      };
+      f.geoBtn.disabled = true;
+      setGeoStatus("Searching the map…", "");
+      WL.geocodeWinery(probe).then(function (hit) {
+        f.geoBtn.disabled = false;
+        if (!hit) { setGeoStatus("No match. Type the coordinates by hand, or refine the name.", "warn"); return; }
+        f.lat.value = hit.lat.toFixed(6);
+        f.lng.value = hit.lng.toFixed(6);
+        setGeoStatus("Found: " + hit.label, "ok");
+      }).catch(function () {
+        f.geoBtn.disabled = false;
+        setGeoStatus("Lookup failed. Check your connection, or type coordinates by hand.", "warn");
+      });
+    });
+
     document.getElementById("new-btn").addEventListener("click", blankForm);
 
     document.getElementById("reload-btn").addEventListener("click", function () {
@@ -328,6 +368,11 @@
       working = working.filter(function (w) { return w.slug !== slug; });
       save(); renderList(); blankForm();
     });
+  }
+
+  function setGeoStatus(msg, kind) {
+    f.geoStatus.textContent = msg;
+    f.geoStatus.className = "geo-status" + (kind ? " geo-" + kind : "");
   }
 
   function flash(msg) {

@@ -80,6 +80,16 @@
       </div>
 
       <div class="field">
+        <label>Location <span class="hint">(auto-filled from the map; edit to nudge the pin)</span></label>
+        <div class="geo-row">
+          <button id="geo-btn" class="btn btn-secondary" type="button">📍 Look up from map</button>
+          <input id="f-lat" type="text" inputmode="decimal" placeholder="latitude" aria-label="Latitude" />
+          <input id="f-lng" type="text" inputmode="decimal" placeholder="longitude" aria-label="Longitude" />
+        </div>
+        <div id="geo-status" class="geo-status"></div>
+      </div>
+
+      <div class="field">
         <label class="toggle"><input id="f-has-restaurant" type="checkbox" /> Has a restaurant</label>
       </div>
 

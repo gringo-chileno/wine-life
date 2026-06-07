@@ -83,6 +83,22 @@ def main():
     picked.sort(key=lambda p: p.date)
     picked = picked[: args.limit]
 
+    # Report the photos' own GPS so a winery's location can come straight from
+    # where you actually stood (the "from photos" source). Falls back to
+    # scripts/geocode.py (by name) when none of the photos are geotagged.
+    gps = [p.location for p in picked if p.location and p.location[0] is not None]
+    if gps:
+        lats = sorted(g[0] for g in gps)
+        lngs = sorted(g[1] for g in gps)
+        mid = len(lats) // 2
+        mlat = lats[mid] if len(lats) % 2 else (lats[mid - 1] + lats[mid]) / 2
+        mlng = lngs[mid] if len(lngs) % 2 else (lngs[mid - 1] + lngs[mid]) / 2
+        print('Photo GPS (median of %d geotagged): "location": { "lat": %.7f, "lng": %.7f }'
+              % (len(gps), mlat, mlng))
+    else:
+        print("No geotagged photos here. Use scripts/geocode.py to look the winery up by name.")
+    print()
+
     out = STAGING / args.slug
     out.mkdir(parents=True, exist_ok=True)
     print(f"Found {len(picked)} candidate(s). Exporting copies to {out} ...")

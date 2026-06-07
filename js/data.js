@@ -127,6 +127,36 @@
     });
   }
 
+  // Geocode a free-text place query to coordinates via OpenStreetMap's
+  // Nominatim (no API key). Returns {lat, lng, label} or null. The browser
+  // sends a Referer that satisfies Nominatim's usage policy for light use.
+  function geocode(query) {
+    var q = String(query || "").trim();
+    if (!q) return Promise.resolve(null);
+    var url = "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=" + encodeURIComponent(q);
+    return fetch(url, { headers: { "Accept": "application/json" } })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (list) {
+        if (!list || !list.length) return null;
+        var hit = list[0];
+        var lat = parseFloat(hit.lat), lng = parseFloat(hit.lon);
+        if (isNaN(lat) || isNaN(lng)) return null;
+        return { lat: lat, lng: lng, label: hit.display_name || q };
+      });
+  }
+
+  // Best-effort geocode for a winery: try the name first (Nominatim knows most
+  // wineries by name), then fall back to just the town/region.
+  function geocodeWinery(w) {
+    var country = w.country || "Chile";
+    var full = [w.name, w.region, country].filter(Boolean).join(", ");
+    var area = [w.town, w.region, country].filter(Boolean).join(", ");
+    return geocode(full).then(function (hit) {
+      if (hit) return hit;
+      return area && area !== full ? geocode(area) : null;
+    });
+  }
+
   // Load the dataset. Works over http(s); file:// will fail fetch (use a server).
   function loadWineries() {
     return fetch("data/wineries.json", { cache: "no-store" }).then(function (res) {
@@ -147,6 +177,8 @@
     ratingText: ratingText,
     slugify: slugify,
     matchesSearch: matchesSearch,
+    geocode: geocode,
+    geocodeWinery: geocodeWinery,
     loadWineries: loadWineries
   };
 })();

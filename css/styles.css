@@ -238,6 +238,13 @@ a { color: var(--wine-accent); }
 .toggle { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; }
 .toggle input { width: 20px; height: 20px; }
 
+.geo-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.geo-row .btn { flex: 0 0 auto; }
+.geo-row input { flex: 1; min-width: 120px; }
+.geo-status { margin-top: 8px; font-size: .9rem; color: var(--muted); min-height: 1.1em; }
+.geo-status.geo-ok { color: var(--good); }
+.geo-status.geo-warn { color: var(--gold); }
+
 .editor-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
 .list-panel { margin-top: 30px; }
 .entry-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
