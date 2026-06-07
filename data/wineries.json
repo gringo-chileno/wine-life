@@ -329,9 +329,9 @@
     "hasHotel": true,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 3,
+      "scenery": 5,
+      "facilities": 4,
       "dining": null
     },
     "amenities": [],
