@@ -173,10 +173,10 @@
     "hasHotel": true,
     "kidFriendly": false,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
-      "dining": null
+      "wine": 4,
+      "scenery": 4,
+      "facilities": 5,
+      "dining": 3
     },
     "amenities": [],
     "favoriteWines": [],
