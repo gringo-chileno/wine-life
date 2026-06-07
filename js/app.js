@@ -52,10 +52,12 @@
     var fill = el("div", "rating-fill");
     if (typeof value === "number") {
       fill.style.width = (value / 5 * 100) + "%";
+      track.appendChild(fill);
     } else {
+      // Unrated: show the empty striped track, no fill (a width-less fill div
+      // would otherwise default to full width and hide the empty state).
       track.classList.add("rating-track-empty");
     }
-    track.appendChild(fill);
     row.appendChild(track);
     row.appendChild(el("span", "rating-num", typeof value === "number" ? value.toFixed(0) : "?"));
     return row;

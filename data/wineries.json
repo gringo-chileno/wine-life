@@ -65,18 +65,18 @@
     },
     "visited": "2025-05-24",
     "website": "https://www.montgras.cl",
-    "hasRestaurant": false,
+    "hasRestaurant": true,
     "hasHotel": false,
-    "kidFriendly": false,
+    "kidFriendly": true,
     "ratings": {
-      "wine": null,
-      "scenery": null,
-      "facilities": null,
+      "wine": 2,
+      "scenery": 3,
+      "facilities": 3,
       "dining": null
     },
     "amenities": [],
     "favoriteWines": [],
-    "notes": "",
+    "notes": "Make-your-own-wine blending experience. Has a lunch spot, but I didn't eat there.",
     "photos": []
   },
   {
