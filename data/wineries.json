@@ -726,5 +726,83 @@
       "images/vina-los-3/IMG_0041.jpg",
       "images/vina-los-3/IMG_0045.jpg"
     ]
+  },
+  {
+    "slug": "vina-undurraga",
+    "name": "Viña Undurraga",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Talagante",
+    "location": {
+      "lat": -33.6469615,
+      "lng": -70.886804
+    },
+    "visited": null,
+    "website": "https://www.undurraga.cl",
+    "hasRestaurant": true,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 3,
+      "scenery": 3,
+      "facilities": 4,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "vina-emiliana",
+    "name": "Viña Emiliana",
+    "region": "Casablanca",
+    "country": "Chile",
+    "town": "Casablanca",
+    "location": {
+      "lat": -33.3662785,
+      "lng": -71.298127
+    },
+    "visited": null,
+    "website": "https://www.emiliana.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 2,
+      "scenery": 3,
+      "facilities": 3,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
+  },
+  {
+    "slug": "cavas-del-valle",
+    "name": "Cavas del Valle",
+    "region": "Elqui",
+    "country": "Chile",
+    "town": "Montegrande",
+    "location": {
+      "lat": -30.077558,
+      "lng": -70.4970768
+    },
+    "visited": null,
+    "website": "https://www.cavasdelvalle.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": true,
+    "ratings": {
+      "wine": 3,
+      "scenery": 2,
+      "facilities": 2,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": []
   }
 ]
