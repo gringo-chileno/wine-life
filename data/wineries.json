@@ -25,7 +25,14 @@
       "Montes Alpha Carmenère"
     ],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vina-montes/IMG_8180.jpg",
+      "images/vina-montes/IMG_8182.jpg",
+      "images/vina-montes/IMG_8185.jpg",
+      "images/vina-montes/IMG_9641.jpg",
+      "images/vina-montes/IMG_9646.jpg",
+      "images/vina-montes/IMG_9652.jpg"
+    ]
   },
   {
     "slug": "viu-manent",
@@ -51,7 +58,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "Polo match on the grounds.",
-    "photos": []
+    "photos": [
+      "images/viu-manent/IMG_8234.jpg",
+      "images/viu-manent/IMG_8236.jpg",
+      "images/viu-manent/IMG_8240.jpg",
+      "images/viu-manent/IMG_9749.jpg",
+      "images/viu-manent/IMG_9753.jpg",
+      "images/viu-manent/IMG_9764.jpg"
+    ]
   },
   {
     "slug": "vina-montgras",
@@ -77,7 +91,9 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "Make-your-own-wine blending experience. Has a lunch spot, but I didn't eat there.",
-    "photos": []
+    "photos": [
+      "images/vina-montgras/montgras-handmade.jpg"
+    ]
   },
   {
     "slug": "vina-santa-cruz",
@@ -103,7 +119,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "Car museum and a gondola up the hill.",
-    "photos": []
+    "photos": [
+      "images/vina-santa-cruz/IMG_0431.jpg",
+      "images/vina-santa-cruz/IMG_0435.jpg",
+      "images/vina-santa-cruz/IMG_0437.jpg",
+      "images/vina-santa-cruz/IMG_0446.jpg",
+      "images/vina-santa-cruz/IMG_3168.jpg",
+      "images/vina-santa-cruz/IMG_3171.jpg"
+    ]
   },
   {
     "slug": "vik",
@@ -129,7 +152,13 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vik/IMG_1930.jpg",
+      "images/vik/IMG_1933.jpg",
+      "images/vik/IMG_1935.jpg",
+      "images/vik/IMG_1938.jpg",
+      "images/vik/IMG_5101.jpg"
+    ]
   },
   {
     "slug": "bodegas-re",
@@ -155,7 +184,11 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/bodegas-re/IMG_2879.jpg",
+      "images/bodegas-re/IMG_2880.jpg",
+      "images/bodegas-re/IMG_2881.jpg"
+    ]
   },
   {
     "slug": "vina-santa-rita",
@@ -181,7 +214,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vina-santa-rita/IMG_3935.jpg",
+      "images/vina-santa-rita/IMG_3941.jpg",
+      "images/vina-santa-rita/IMG_3943.jpg",
+      "images/vina-santa-rita/IMG_7368.jpg",
+      "images/vina-santa-rita/IMG_7370.jpg",
+      "images/vina-santa-rita/IMG_7376.jpg"
+    ]
   },
   {
     "slug": "lapostolle-clos-apalta",
@@ -207,7 +247,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/lapostolle-clos-apalta/IMG_5418.jpg",
+      "images/lapostolle-clos-apalta/IMG_5423.jpg",
+      "images/lapostolle-clos-apalta/IMG_9436.jpg",
+      "images/lapostolle-clos-apalta/IMG_9441.jpg",
+      "images/lapostolle-clos-apalta/IMG_9445.jpg",
+      "images/lapostolle-clos-apalta/IMG_9450.jpg"
+    ]
   },
   {
     "slug": "concha-y-toro",
@@ -233,7 +280,12 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/concha-y-toro/IMG_0592.jpg",
+      "images/concha-y-toro/IMG_0594.jpg",
+      "images/concha-y-toro/IMG_0605.jpg",
+      "images/concha-y-toro/IMG_0606.jpg"
+    ]
   },
   {
     "slug": "flaherty-wines",
@@ -259,7 +311,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/flaherty-wines/IMG_2449.jpg",
+      "images/flaherty-wines/IMG_2450.jpg",
+      "images/flaherty-wines/IMG_2451.jpg",
+      "images/flaherty-wines/IMG_2453.jpg",
+      "images/flaherty-wines/IMG_2455.jpg",
+      "images/flaherty-wines/IMG_2457.jpg"
+    ]
   },
   {
     "slug": "monteviejo",
@@ -285,7 +344,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/monteviejo/IMG_4912.jpg",
+      "images/monteviejo/IMG_4914.jpg",
+      "images/monteviejo/IMG_4915.jpg",
+      "images/monteviejo/IMG_8830.jpg",
+      "images/monteviejo/IMG_8831.jpg",
+      "images/monteviejo/IMG_8837.jpg"
+    ]
   },
   {
     "slug": "zuccardi-valle-de-uco",
@@ -311,7 +377,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/zuccardi-valle-de-uco/IMG_4878.jpg",
+      "images/zuccardi-valle-de-uco/IMG_4881.jpg",
+      "images/zuccardi-valle-de-uco/IMG_4883.jpg",
+      "images/zuccardi-valle-de-uco/IMG_4888.jpg",
+      "images/zuccardi-valle-de-uco/IMG_4890.jpg",
+      "images/zuccardi-valle-de-uco/IMG_8815.jpg"
+    ]
   },
   {
     "slug": "vines-of-mendoza",
@@ -363,7 +436,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/pulenta-estate/IMG_4851.jpg",
+      "images/pulenta-estate/IMG_4852.jpg",
+      "images/pulenta-estate/IMG_4853.jpg",
+      "images/pulenta-estate/IMG_4855.jpg",
+      "images/pulenta-estate/IMG_8782.jpg",
+      "images/pulenta-estate/IMG_8785.jpg"
+    ]
   },
   {
     "slug": "bodega-benegas",
@@ -415,7 +495,12 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/casarena/IMG_4858.jpg",
+      "images/casarena/IMG_4859.jpg",
+      "images/casarena/IMG_8795.jpg",
+      "images/casarena/IMG_8796.jpg"
+    ]
   },
   {
     "slug": "odfjell-vineyards",
@@ -427,7 +512,7 @@
       "lat": -33.5399108,
       "lng": -70.8775191
     },
-    "visited": null,
+    "visited": "2026-03-26",
     "website": "https://www.odfjellvineyards.cl",
     "hasRestaurant": false,
     "hasHotel": false,
@@ -441,7 +526,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "Farm animals on the grounds.",
-    "photos": []
+    "photos": [
+      "images/odfjell-vineyards/IMG_5818.jpg",
+      "images/odfjell-vineyards/IMG_5819.jpg",
+      "images/odfjell-vineyards/IMG_5821.jpg",
+      "images/odfjell-vineyards/IMG_5822.jpg",
+      "images/odfjell-vineyards/IMG_5824.jpg",
+      "images/odfjell-vineyards/IMG_5825.jpg"
+    ]
   },
   {
     "slug": "vina-tarapaca",
@@ -453,7 +545,7 @@
       "lat": -33.7689096,
       "lng": -70.9271029
     },
-    "visited": null,
+    "visited": "2026-03-26",
     "website": "https://www.tarapaca.cl",
     "hasRestaurant": false,
     "hasHotel": false,
@@ -467,7 +559,14 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/vina-tarapaca/IMG_5826.jpg",
+      "images/vina-tarapaca/IMG_5828.jpg",
+      "images/vina-tarapaca/IMG_5831.jpg",
+      "images/vina-tarapaca/IMG_5832.jpg",
+      "images/vina-tarapaca/IMG_5834.jpg",
+      "images/vina-tarapaca/IMG_5837.jpg"
+    ]
   },
   {
     "slug": "villard-fine-wines",
@@ -476,10 +575,10 @@
     "country": "Chile",
     "town": "Casablanca",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": -33.278,
+      "lng": -71.2729
     },
-    "visited": null,
+    "visited": "2026-04-05",
     "website": "https://www.villard.cl",
     "hasRestaurant": false,
     "hasHotel": false,
@@ -493,7 +592,10 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/villard-fine-wines/IMG_0478.jpg",
+      "images/villard-fine-wines/IMG_5949.jpg"
+    ]
   },
   {
     "slug": "casas-del-bosque",
@@ -505,7 +607,7 @@
       "lat": -33.318148,
       "lng": -71.4322508
     },
-    "visited": null,
+    "visited": "2025-05-18",
     "website": "https://www.casasdelbosque.cl",
     "hasRestaurant": false,
     "hasHotel": false,
@@ -519,6 +621,13 @@
     "amenities": [],
     "favoriteWines": [],
     "notes": "",
-    "photos": []
+    "photos": [
+      "images/casas-del-bosque/IMG_0090.jpg",
+      "images/casas-del-bosque/IMG_0091.jpg",
+      "images/casas-del-bosque/IMG_0093.jpg",
+      "images/casas-del-bosque/IMG_0097.jpg",
+      "images/casas-del-bosque/IMG_0099.jpg",
+      "images/casas-del-bosque/IMG_2619.jpg"
+    ]
   }
 ]

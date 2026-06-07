@@ -1,4 +1,6 @@
 scripts/_staging/
+scripts/_staging_clean/
+scripts/_selected/
 scripts/__pycache__/
 __pycache__/
 *.pyc
