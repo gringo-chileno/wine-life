@@ -30,6 +30,33 @@
 
   var DASH = "—";
 
+  // A signature accent color per wine region (editorial touch on cards/detail).
+  // Unknown regions get a stable color derived from their name.
+  var REGION_COLORS = {
+    "Maipo": "#7b3f6b",
+    "Cachapoal": "#9c4221",
+    "Colchagua": "#6b1d2e",
+    "Casablanca": "#2f6f6a",
+    "San Antonio / Leyda": "#3a6ea5",
+    "Aconcagua": "#8a6d3b",
+    "Maule": "#4f7a3f",
+    "Curicó": "#a3781f",
+    "Itata": "#5b4a8a",
+    "Limarí": "#b06a28",
+    "Mendoza / Maipú": "#8c2740",
+    "Mendoza / Luján de Cuyo": "#6d2f4d",
+    "Mendoza / Uco Valley": "#2c5f7a"
+  };
+
+  function regionColor(region) {
+    var r = String(region || "").trim();
+    if (REGION_COLORS[r]) return REGION_COLORS[r];
+    if (!r) return "#6b615c";
+    var hash = 0;
+    for (var i = 0; i < r.length; i++) hash = (hash * 31 + r.charCodeAt(i)) % 360;
+    return "hsl(" + hash + ", 38%, 36%)";
+  }
+
   // Average of the ratings that are actually present (non-null numbers).
   // Returns null when nothing is rated, so a no-restaurant winery isn't penalized.
   function computeOverall(winery) {
@@ -112,6 +139,7 @@
     RATING_KEYS: RATING_KEYS,
     COMMON_REGIONS: COMMON_REGIONS,
     DASH: DASH,
+    regionColor: regionColor,
     computeOverall: computeOverall,
     fmt: fmt,
     fmtScore: fmtScore,

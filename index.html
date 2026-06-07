@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Wine Life — Winery Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -21,14 +24,20 @@
   <!-- GRID VIEW -->
   <main id="grid-view" class="wrap">
     <div class="controls">
-      <input
-        id="search"
-        class="search"
-        type="search"
-        placeholder="Search name, region, notes, wines…"
-        autocomplete="off"
-        aria-label="Search wineries"
-      />
+      <div class="controls-top">
+        <input
+          id="search"
+          class="search"
+          type="search"
+          placeholder="Search name, region, notes, wines…"
+          autocomplete="off"
+          aria-label="Search wineries"
+        />
+        <div class="view-toggle" role="tablist" aria-label="View">
+          <button id="view-grid" class="view-btn on" type="button" role="tab" aria-selected="true">Grid</button>
+          <button id="view-map" class="view-btn" type="button" role="tab" aria-selected="false">Map</button>
+        </div>
+      </div>
       <div class="control-row">
         <label class="control">
           <span>Region</span>
@@ -74,6 +83,10 @@
 
     <p id="result-count" class="result-count" aria-live="polite"></p>
     <section id="grid" class="grid" aria-label="Wineries"></section>
+    <div id="map-wrap" class="map-wrap" hidden>
+      <div id="map" class="map"></div>
+      <p id="map-note" class="map-note" hidden></p>
+    </div>
     <p id="empty" class="empty" hidden>No wineries match. Try clearing filters or search.</p>
   </main>
 
