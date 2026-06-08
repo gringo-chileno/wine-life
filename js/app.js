@@ -203,7 +203,7 @@
 
     var heroText = el("div", "card-hero-text");
     heroText.appendChild(el("h2", "card-name", w.name));
-    var meta = [w.region, w.town].filter(Boolean).join(" · ");
+    var meta = [w.region, w.country].filter(Boolean).join(" · ");
     heroText.appendChild(el("p", "card-meta", meta || WL.DASH));
     hero.appendChild(heroText);
     a.appendChild(hero);
