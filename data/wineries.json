@@ -808,5 +808,63 @@
     "favoriteWines": [],
     "notes": "",
     "photos": []
+  },
+  {
+    "slug": "santa-catalina",
+    "name": "Viña Santa Catalina",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Alto Jahuel",
+    "location": {
+      "lat": -33.73155,
+      "lng": -70.68595
+    },
+    "visited": "2026-08-09",
+    "website": "https://santacatalina.cl",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 3,
+      "scenery": 3,
+      "facilities": 3,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/santa-catalina/IMG_8266.jpg",
+      "images/santa-catalina/IMG_8270.jpg"
+    ]
+  },
+  {
+    "slug": "cousino-macul",
+    "name": "Cousiño Macul",
+    "region": "Maipo",
+    "country": "Chile",
+    "town": "Peñalolén",
+    "location": {
+      "lat": -33.49685,
+      "lng": -70.55863
+    },
+    "visited": "2026-08-07",
+    "website": "https://www.cousinomacul.com",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 5,
+      "scenery": 2,
+      "facilities": 3,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/cousino-macul/IMG_8202.jpg",
+      "images/cousino-macul/IMG_8203.jpg"
+    ]
   }
 ]
