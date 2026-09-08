@@ -2,17 +2,16 @@
 
 A personal journal of the wineries I visit in Chile and Argentina. It rates each
 place across categories, keeps notes and favorite wines, and shows my own photos.
-Static site, no build step, hosted on GitHub Pages.
+Static site, no build step.
 
-Live: https://gringo-chileno.github.io/wine-life
+Live: https://wine-life.view.fast/ (Spacefast)
+Also still up: https://gringo-chileno.github.io/wine-life (GitHub Pages)
 
 ## How it works
 
 - `index.html` + `js/app.js` render the journal: a grid of winery cards with a
   big auto-averaged score, search, region/restaurant/kid filters, sort, and a
   detail view per winery with a photo lightbox.
-- `editor.html` + `js/editor.js` are a built-in add/edit form. It edits a working
-  copy in your browser (localStorage), then exports an updated `data/wineries.json`.
 - `data/wineries.json` is the dataset. One object per winery.
 - `images/<slug>/` holds optimized photos for each winery.
 
@@ -25,11 +24,14 @@ isn't penalized. Missing data shows a dash.
 
 ## Adding a winery
 
-1. Open `editor.html`, fill out the form, **Save entry**, then **Export wineries.json**.
-2. Drop the exported file into `data/`.
-3. Photos: put files in `images/<slug>/` after optimizing them (below), and list the
-   filenames in the editor's Photos box.
-4. Commit and push. GitHub Pages redeploys automatically.
+There is no add form. The site is public, so entries are added by editing
+`data/wineries.json` directly (I do this through Claude Code).
+
+1. Add an object to `data/wineries.json`, copying the shape of an existing entry.
+2. Photos: optimize them (below) into `images/<slug>/`, then list the filenames
+   in that entry's `photos` array. The first one is the card cover.
+3. Commit and push, which redeploys GitHub Pages.
+4. Run `./publish.sh "what changed"` to update the Spacefast site.
 
 ## Photos
 
