@@ -866,5 +866,145 @@
       "images/cousino-macul/IMG_8202.jpg",
       "images/cousino-macul/IMG_8203.jpg"
     ]
+  },
+  {
+    "slug": "zaranda",
+    "name": "Zaranda",
+    "region": "Itata",
+    "country": "Chile",
+    "town": "Guarilihue",
+    "location": {
+      "lat": -36.561,
+      "lng": -72.7
+    },
+    "visited": "2026-10-02",
+    "website": "",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 4,
+      "scenery": 3,
+      "facilities": 2,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/zaranda/IMG_9212.jpg"
+    ]
+  },
+  {
+    "slug": "jorge-cotal",
+    "name": "Jorge Cotal",
+    "region": "Itata",
+    "country": "Chile",
+    "town": "Guarilihue",
+    "location": {
+      "lat": -36.5753,
+      "lng": -72.6749
+    },
+    "visited": "2026-10-02",
+    "website": "",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 5,
+      "scenery": 2,
+      "facilities": 1,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/jorge-cotal/IMG_9219.jpg"
+    ]
+  },
+  {
+    "slug": "tres-c",
+    "name": "Tres C",
+    "region": "Itata",
+    "country": "Chile",
+    "town": "Guarilihue",
+    "location": {
+      "lat": -36.5784979,
+      "lng": -72.6731963
+    },
+    "visited": "2026-10-03",
+    "website": "",
+    "hasRestaurant": true,
+    "hasHotel": true,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 4,
+      "scenery": 3,
+      "facilities": 2,
+      "dining": 4
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/tres-c/IMG_2409.jpg"
+    ]
+  },
+  {
+    "slug": "mingaco",
+    "name": "Mingaco",
+    "region": "Itata",
+    "country": "Chile",
+    "town": "Checura",
+    "location": {
+      "lat": -36.5774,
+      "lng": -72.6544
+    },
+    "visited": "2026-10-04",
+    "website": "",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 4,
+      "scenery": 4,
+      "facilities": 2,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/mingaco/IMG_9286.jpg"
+    ]
+  },
+  {
+    "slug": "mora-reyes",
+    "name": "Mora Reyes",
+    "region": "Itata",
+    "country": "Chile",
+    "town": "Guarilihue",
+    "location": {
+      "lat": -36.5678,
+      "lng": -72.6907
+    },
+    "visited": "2026-10-04",
+    "website": "",
+    "hasRestaurant": false,
+    "hasHotel": false,
+    "kidFriendly": false,
+    "ratings": {
+      "wine": 1,
+      "scenery": 2,
+      "facilities": 2,
+      "dining": null
+    },
+    "amenities": [],
+    "favoriteWines": [],
+    "notes": "",
+    "photos": [
+      "images/mora-reyes/barrels.jpg"
+    ]
   }
 ]
